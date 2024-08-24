@@ -13,17 +13,21 @@
 #define LOWER   1
 #define RAISE   2
 
-// &lt {
-//     tapping-term-ms = <180>;
-//     quick-tap-ms = <100>;
-//     flavor = "balanced";
-// }
-//
-// &mt {
-//     tapping-term-ms = <180>;
-//     quick-tap-ms = <100>;
-//     flavor = "balanced";
-// }
+&lt {
+    tapping-term-ms = <180>;
+    quick-tap-ms = <100>;
+    flavor = "balanced";
+}
+
+&mt {
+    tapping-term-ms = <180>;
+    quick-tap-ms = <100>;
+    flavor = "balanced";
+}
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 
 / {
     keymap {
@@ -42,7 +46,7 @@
              bindings = <
    &trans   &trans    &kp DLLR  &kp RBKT &kp LBKT &trans     &trans &kp LT &kp GT &kp PRCNT &kp PSCRN &kp C_VOL_UP
    &kp PLUS &kp UNDER &kp EXCL  &kp RPAR &kp LPAR &kp HASH   &kp AT &kp EQUAL &kp DQT &kp SQT &kp GRAVE &kp C_VOL_DN
-   &trans   &kp BSLH  &kp ASTRK &kp LBRC &kp RBRC &kp TILDE  &kp CARET &kp AMPS &kp SEMI &kp PIPE &kp QMARK
+   &trans   &kp BSLH  &kp ASTRK &kp LBRC &kp RBRC &kp TILDE  &kp CARET &kp AMPS &kp SEMI &kp PIPE &kp QMARK &kp C_MUTE
                                        &trans &trans &trans  &trans &trans &trans 
              >;
          };
